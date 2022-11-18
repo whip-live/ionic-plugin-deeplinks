@@ -72,6 +72,10 @@
     }
   }
   
+  if([[url scheme] isEqualToString:@"file"]) {
+    return YES;
+  }
+  
   return NO;
 }
 
